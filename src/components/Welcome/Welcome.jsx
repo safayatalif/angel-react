@@ -8,16 +8,20 @@ const Welcome = () => {
   };
 
   return (
-    <div id="about" className="container mx-auto p-8 flex flex-col lg:flex-row gap-8">
-      <div className="lg:w-1/2 hidden lg:block">
-        <img src="/banner_1.png" className="w-full h-96" alt="" />
+    <div id="about" className="container mx-auto px-8 py-16 flex flex-col lg:flex-row gap-8">
+      <div className="lg:w-1/2 hidden lg:block transform rotate-3 hover:scale-105 hover:rotate-0 transition-transform duration-300">
+        <img
+          src="/banner_1.png"
+          className="w-full h-96 rounded-lg border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white shadow-md dark:bg-[#18181B]"
+          alt=""
+        />
       </div>
       <div className="lg:w-1/2 px-4">
         <div className="about-content">
-          <h3 className="text-2xl font-bold text-white">
+          <h1 className="text-3xl font-semibold text-white leading-[34px] ">
             <span>
-              Welcome to Angel Publishers - Where Imagination Takes Flight! Hello, dear friends! We are thrilled to launch Angel Publishers, your go-to destination for a world of creativity, learning,
-              and end
+              Welcome to <span className="text-sky-500 font-bold">Angel Publishers</span> - Where Imagination Takes Flight! Hello, dear friends! We are thrilled to launch Angel Publishers, your go-to
+              destination for a world of creativity, learning, and end
             </span>
             <span className={isExpanded ? "inline" : "hidden"}>
               less fun! At Angel Publishers, we believe in the magic of coloring and the joy of exploring vibrant worlds through our books. Our mission is to make your kids minds more colorful, one
@@ -27,7 +31,7 @@ const Welcome = () => {
             <span className="cursor-pointer text-xl text-sky-800 hover:text-sky-500 duration-300 ml-4" onClick={toggleText}>
               {isExpanded ? "Read Less" : "...Read More"}
             </span>
-          </h3>
+          </h1>
 
           <div className="btn-group flex flex-wrap mt-8">
             <button className="w-36 h-16 border-2 border-sky-300 text-sky-800 font-black rounded-full hover:text-white duration-300 relative group">

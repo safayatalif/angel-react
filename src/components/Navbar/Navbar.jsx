@@ -26,16 +26,28 @@ export const Navbar = () => {
         </div>
         <ul className="hidden items-center justify-between gap-10 md:flex">
           <li className="group flex  cursor-pointer flex-col">
-            Home<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+            <a href="#home">Home</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group flex  cursor-pointer flex-col">
-            Services<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+            <a href="#about">About</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group flex  cursor-pointer flex-col">
-            About<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+            <a href="#books">Books</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group flex  cursor-pointer flex-col">
-            Contact<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+            <a href="#books_inside">Books Inside</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="group flex  cursor-pointer flex-col">
+            <a href="#book-reviews">Reviews</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="group flex  cursor-pointer flex-col">
+            <a href="#contact">Contacts</a>
+            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
         <div ref={dropDownMenuRef} onClick={() => setDropDownState(!dropDownState)} className="relative flex transition-transform md:hidden">
