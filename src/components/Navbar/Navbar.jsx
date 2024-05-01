@@ -19,12 +19,12 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <section className="bg-transparent absolute w-full z-50">
-      <nav className=" flex items-center justify-between px-4 py-2 text-white">
+    <section className="fixed w-full z-50  bg-sky-100">
+      <nav className="flex items-center justify-between px-4 py-2 ">
         <div className="scale-100 cursor-pointer rounded-2xl px-3 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-          <img className="w-16 sm:w-20 md:w-36 lg:w-40" src="/logo.png" alt="" />
+          <img className="w-28 sm:w-28 md:w-28 lg:w-32" src="/logo.png" alt="" />
         </div>
-        <ul className="hidden items-center justify-between gap-10 md:flex">
+        <ul className="hidden items-center justify-between gap-10 md:flex font-semibold">
           <li className="group flex  cursor-pointer flex-col">
             <a href="#home">Home</a>
             <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>

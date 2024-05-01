@@ -34,8 +34,8 @@ const Books = () => {
 
   return (
     <div id="books" className="container mx-auto my-16 p-8">
-      <h1 className="text-center font-bold text-4xl text-white mb-16">Books</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <h1 className="text-center font-bold text-4xl text-sky-500 mb-16">Our All Books</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
         {visibleBooks.map((book, index) => (
           <Book key={index} book={book} />
         ))}
@@ -58,6 +58,7 @@ const Books = () => {
           >
             See Less
           </button>
+
         </div>
       )}
     </div>
