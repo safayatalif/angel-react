@@ -18,7 +18,7 @@ const Welcome = () => {
       </div>
       <div className="lg:w-1/2 px-4">
         <div className="about-content">
-          <h1 className="text-3xl font-semibold text-white leading-[34px] ">
+          <h1 className="text-xl md:text-2xl  lg:text-3xl font-semibold text-white leading-[34px] ">
             <span>
               Welcome to <span className="text-sky-500 font-bold">Angel Publishers</span> - Where Imagination Takes Flight! Hello, dear friends! We are thrilled to launch Angel Publishers, your go-to
               destination for a world of creativity, learning, and end
