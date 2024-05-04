@@ -1,3 +1,4 @@
+import BookVideo from "./components/BookVideo/BookVideo";
 import Books from "./components/Books/Books";
 import BooksInside from "./components/BooksInside/BooksInside";
 import Footer from "./components/Footer/Footer";
@@ -15,6 +16,7 @@ const App = () => {
       <Welcome></Welcome>
       <Books></Books>
       <BooksInside></BooksInside>
+      <BookVideo></BookVideo>
       <Footer></Footer>
     </div>
   );
