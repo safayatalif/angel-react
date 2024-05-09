@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const Navbar = () => {
+export const Navbar = ({ isFixed }) => {
   const [dropDownState, setDropDownState] = useState(false);
   const dropDownMenuRef = useRef();
 
@@ -19,12 +19,18 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <section className="fixed w-full z-50  bg-sky-100">
+    <section
+      className={`navbar ${
+        isFixed
+          ? "fixed top-0 w-full z-50 transform duration-1000 border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
+          : "border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
+      }`}
+    >
       <nav className="flex items-center justify-between px-4 py-2 ">
         <div className="scale-100 cursor-pointer rounded-2xl px-3 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
           <img className="w-28 sm:w-28 md:w-28 lg:w-32" src="/logo.png" alt="" />
         </div>
-        <ul className="hidden items-center justify-between gap-10 md:flex font-semibold">
+        <ul className="hidden items-center justify-between gap-10 md:flex font-semibold text-white font-semibold">
           <li className="group flex  cursor-pointer flex-col">
             <a href="#home">Home</a>
             <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
