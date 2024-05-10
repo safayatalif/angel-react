@@ -4,7 +4,7 @@ const Footer = () => {
   const [currentYear] = useState(new Date().getFullYear());
 
   return (
-    <footer className=" bg-sky-50 py-8 text-black">
+    <footer className=" dark:bg-gradient-to-r from-sky-500 to-cyan-50 py-8 text-black">
       <div className="flex flex-col justify-around gap-5 container mx-auto p-2">
         <aside className="flex flex-col items-center justify-center gap-1 text-xl">
           <img className="w-16 sm:w-20 md:w-36 lg:w-40" src="/logo.png" alt="" />
@@ -48,7 +48,6 @@ const Footer = () => {
           <p>&copy; {currentYear} Angel Publisher. All Rights Reserved.</p>
         </aside>
       </div>
-
     </footer>
   );
 };

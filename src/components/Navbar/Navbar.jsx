@@ -75,10 +75,30 @@ export const Navbar = ({ isFixed }) => {
           </svg>
           {dropDownState && (
             <ul className=" z-10  gap-2  bg-[#393E46]  absolute right-0 top-11 flex w-[200px] flex-col  rounded-lg   text-base ">
-              <li className="cursor-pointer  px-6 py-2 text-white rounded-t-lg hover:bg-sky-600 ">Home</li>
-              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">Services</li>
-              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">About</li>
-              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">Contact</li>
+              <li className="cursor-pointer  px-6 py-2 text-white rounded-t-lg hover:bg-sky-600 ">
+                {" "}
+                <a href="#home">Home</a>
+              </li>
+              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+                {" "}
+                <a href="#about">About</a>
+              </li>
+              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+                {" "}
+                <a href="#books">Books</a>
+              </li>
+              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+                {" "}
+                <a href="#books_inside">Books Inside</a>
+              </li>
+              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+                {" "}
+                <a href="#book-reviews">Reviews</a>
+              </li>
+              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+                {" "}
+                <a href="#contact">Contacts</a>
+              </li>
             </ul>
           )}
         </div>

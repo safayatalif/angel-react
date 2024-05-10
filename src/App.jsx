@@ -5,6 +5,7 @@ import BooksInside from "./components/BooksInside/BooksInside";
 import Footer from "./components/Footer/Footer";
 import { Home } from "./components/Home/Home";
 import { Navbar } from "./components/Navbar/Navbar";
+import { TopBanner } from "./components/TopBanner/TopBanner";
 import Welcome from "./components/Welcome/Welcome";
 
 const App = () => {
@@ -28,7 +29,8 @@ const App = () => {
   return (
     <div>
       <div className="">
-        <Home></Home>
+        <TopBanner></TopBanner>
+        {/* <Home></Home> */}
       </div>
       <Navbar isFixed={isNavbarFixed}></Navbar>
       <Welcome></Welcome>
