@@ -16,7 +16,7 @@ export const TopBanner = () => {
   }, [currentSlider]);
 
   return (
-    <div className="flex flex-row-reverse justify-between bg-sky-800">
+    <div id="home" className="flex flex-row-reverse justify-between bg-sky-800 container mx-auto">
       <div
         className="w-full h-[176px] sm:h-[296px] lg:h-[436px] xl:h-[496px] 2xl:h-[500px] flex flex-col items-center justify-center bg-transparent bg-black bg-cover transform duration-1000 ease-linear overflow-hidden"
         style={{ backgroundImage: `url(${sliders[currentSlider].img})`, backgroundSize: "cover" }}

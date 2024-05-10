@@ -2,7 +2,7 @@ const VIDEO_URL = "https://www.facebook.com/plugins/video.php?height=314&href=ht
 
 const BookVideo = () => {
   return (
-    <div className="bg-gradient-to-r from-violet-900 to-fuchsia-900">
+    <div className="bg-gradient-to-r from-violet-900 to-fuchsia-900 my-12">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between p-8 lg:p-0">
         <div className="w-full lg:w-1/2 lg:px-4 p-6 text-white">
           <h3 className="text-lg md:text-xl lg:text-xl xl:text-3xl font-semibold leading-[34px] text-white mb-6">

@@ -8,7 +8,7 @@ const Welcome = () => {
   };
 
   return (
-    <div id="about" className="container mx-auto px-8 py-16 flex flex-col lg:flex-row gap-8">
+    <div id="about" className="container mx-auto px-8 py-16 mt-12 flex flex-col lg:flex-row gap-8">
       <div className="lg:w-1/2 hidden lg:block transform rotate-3 hover:scale-105 hover:rotate-0 transition-transform duration-300">
         <img
           src="/banner_1.png"
