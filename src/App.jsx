@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="font-serif text-gray-700">
       <div className="">
         <TopBanner></TopBanner>
         {/* <Home></Home> */}

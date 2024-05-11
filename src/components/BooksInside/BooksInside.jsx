@@ -29,7 +29,7 @@ const BooksInside = () => {
   ];
 
   return (
-    <div id="books_inside" className="container mx-auto my-16 p-12">
+    <div id="books_inside" className="container mx-auto my-16 p-12 border-y-2">
       <h1 className="text-center font-bold text-4xl text-sky-500 mb-16">Books Inside</h1>
       <div className="h-96 m-16">
         <Swiper
@@ -41,19 +41,19 @@ const BooksInside = () => {
           breakpoints={{
             160: {
               slidesPerView: 1,
-              spaceBetween: 40,
+              spaceBetween: 10,
             },
             560: {
-              slidesPerView: 2,
-              spaceBetween: 50,
+              slidesPerView: 1,
+              spaceBetween: 20,
             },
             640: {
               slidesPerView: 2,
-              spaceBetween: 50,
+              spaceBetween: 20,
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 80,
+              spaceBetween: 40,
             },
             1024: {
               slidesPerView: 3,

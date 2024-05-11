@@ -8,7 +8,7 @@ const Welcome = () => {
   };
 
   return (
-    <div id="about" className="container mx-auto px-8 py-16 mt-12 flex flex-col lg:flex-row gap-8">
+    <div id="about" className="container mx-auto px-8 py-16 mt-12 flex flex-col lg:flex-row gap-8 border-y-2">
       <div className="lg:w-1/2 hidden lg:block transform rotate-3 hover:scale-105 hover:rotate-0 transition-transform duration-300">
         <img
           src="/banner_1.png"
@@ -18,7 +18,7 @@ const Welcome = () => {
       </div>
       <div className="lg:w-1/2 px-4">
         <div className="about-content">
-          <h1 className="text-xl md:text-2xl  lg:text-3xl font-semibold leading-[34px] ">
+          <h1 className="text-lg md:text-xl  lg:text-2xl font-semibold leading-[34px] text-gray-700">
             <span>
               Welcome to <span className="text-sky-500 font-bold">Angel Publishers</span> - Where Imagination Takes Flight! Hello, dear friends! We are thrilled to launch Angel Publishers, your go-to
               destination for a world of creativity, learning, and end

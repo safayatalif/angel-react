@@ -22,13 +22,13 @@ export const Navbar = ({ isFixed }) => {
     <section
       className={`navbar ${
         isFixed
-          ? "fixed top-0 w-full z-50 transform duration-1000 border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
-          : "border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
+          ? "fixed top-0 w-full z-50 transform duration-1000  bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
+          : " bg-white shadow-md dark:bg-gradient-to-r from-cyan-50 to-sky-500"
       }`}
     >
       <nav className="flex items-center justify-between px-4 py-2  container mx-auto">
         <div className="scale-100 cursor-pointer rounded-2xl px-3 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-          <img className="w-28 sm:w-28 md:w-28 lg:w-32" src="/logo.png" alt="" />
+          <img className="w-24 sm:w-24 md:w-24 lg:w-28" src="/logo.png" alt="" />
         </div>
         <ul className="hidden items-center justify-between gap-10 md:flex font-semibold text-white font-semibold">
           <li className="group flex  cursor-pointer flex-col">
