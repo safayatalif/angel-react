@@ -3,10 +3,10 @@ import BookVideo from "./components/BookVideo/BookVideo";
 import Books from "./components/Books/Books";
 import BooksInside from "./components/BooksInside/BooksInside";
 import Footer from "./components/Footer/Footer";
-import { Home } from "./components/Home/Home";
 import { Navbar } from "./components/Navbar/Navbar";
 import { TopBanner } from "./components/TopBanner/TopBanner";
 import Welcome from "./components/Welcome/Welcome";
+import BookReviews from "./components/BookReviews/BookReviews";
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -27,16 +27,17 @@ const App = () => {
   }, []);
 
   return (
-    <div className="font-serif text-gray-700">
+    <div className="font-sans text-gray-700">
+      <Navbar isFixed={isNavbarFixed}></Navbar>
       <div className="">
         <TopBanner></TopBanner>
         {/* <Home></Home> */}
       </div>
-      <Navbar isFixed={isNavbarFixed}></Navbar>
       <Welcome></Welcome>
       <Books></Books>
       <BooksInside></BooksInside>
-      <BookVideo></BookVideo>
+      {/* <BookVideo></BookVideo> */}
+      <BookReviews></BookReviews>
       <Footer></Footer>
     </div>
   );

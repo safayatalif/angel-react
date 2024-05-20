@@ -16,10 +16,10 @@ export const TopBanner = () => {
   }, [currentSlider]);
 
   return (
-    <div id="home" className="flex flex-row-reverse justify-between bg-sky-800 container mx-auto">
+    <div id="home" className="flex flex-row-reverse justify-between bg-sky-800 container mx-auto mt-6">
       <div
         className="w-full h-[176px] sm:h-[296px] lg:h-[436px] xl:h-[496px] 2xl:h-[500px] flex flex-col items-center justify-center bg-transparent bg-black bg-cover transform duration-1000 ease-linear overflow-hidden"
-        style={{ backgroundImage: `url(${sliders[currentSlider].img})`, backgroundSize: "cover" }}
+        // style={{ backgroundImage: `url(${sliders[currentSlider].img})`, backgroundSize: "cover" }}
       >
         <a className="w-full cursor-pointer" href="https://www.amazon.co.uk/stores/author/B0CPFHHHNC/allbooks" target="_blank">
           <img className="w-9/12 h-[176px] sm:h-[296px] lg:h-[436px] xl:h-[496px] 2xl:h-[500px] mx-auto" src={sliders[currentSlider].img} alt="" />

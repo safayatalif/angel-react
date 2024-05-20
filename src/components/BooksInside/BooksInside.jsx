@@ -29,7 +29,7 @@ const BooksInside = () => {
   ];
 
   return (
-    <div id="books_inside" className="container mx-auto my-16 p-12 border-y-2">
+    <div id="books_inside" className="container mx-auto p-4 md:p-12 border-y-2">
       <h1 className="text-center font-bold text-4xl text-sky-500 mb-16">Books Inside</h1>
       <div className="h-96 m-16">
         <Swiper

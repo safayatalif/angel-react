@@ -37,11 +37,11 @@ const Footer = () => {
                 Reviews
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="cursor-pointer hover:underline" href="#contact">
                 Contacts
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <aside className="text-center text-sm">

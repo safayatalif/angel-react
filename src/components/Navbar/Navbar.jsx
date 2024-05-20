@@ -51,10 +51,10 @@ export const Navbar = ({ isFixed }) => {
             <a href="#book-reviews">Reviews</a>
             <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li className="group flex  cursor-pointer flex-col">
+          {/* <li className="group flex  cursor-pointer flex-col">
             <a href="#contact">Contacts</a>
             <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
-          </li>
+          </li> */}
         </ul>
         <div ref={dropDownMenuRef} onClick={() => setDropDownState(!dropDownState)} className="relative flex transition-transform md:hidden">
           <svg
@@ -95,10 +95,10 @@ export const Navbar = ({ isFixed }) => {
                 {" "}
                 <a href="#book-reviews">Reviews</a>
               </li>
-              <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
+              {/* <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
                 {" "}
                 <a href="#contact">Contacts</a>
-              </li>
+              </li> */}
             </ul>
           )}
         </div>
